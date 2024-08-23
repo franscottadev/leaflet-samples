@@ -2,9 +2,9 @@ services:
     app:
         container_name: leaflet-map-test
         image: node:18-alpine
-        command: npm run dev
+        command: npm run dev -- --host
         ports:
-            - '3010:3010'
+            - '4321:4321'
         user: root
         volumes:
             - ./app:/app
